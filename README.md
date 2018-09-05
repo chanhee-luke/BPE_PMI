@@ -22,6 +22,7 @@ Also, the above formula suggests that it should stop when the maximum of the abo
 
 # Usage
 ```bpe_modified.py -i <input> -o <output> -s <number of operations> -orig<original BPE_1 mode>```<sup>[1](#footnote1)</sup>
+
 ```apply-bpe -c codes_file < test_file > out_file```<sup>[2](#footnote2)</sup>
 
 
