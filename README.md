@@ -3,7 +3,7 @@ Notre Dame Natural Language Processing Group
 
 # Overview
 
-This code explores a novel approach for pre-processing the corpus before training.
+This code explores a novel approach for pre-processing the corpus before training
 
 # Mechanism
 
