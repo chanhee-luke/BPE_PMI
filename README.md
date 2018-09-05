@@ -3,16 +3,20 @@ Notre Dame Natural Language Processing Group
 
 # Overview
 
+This code explores a novel approach for pre-processing the corpus before training.
+
+# Mechanism
+
 If a corpus is compressed using a Shannon-optimal code, the compressed size would be
 
 <img src="https://i.imgur.com/NNjAzjF.jpg" width="300">
 
-For experiement, if wordpieces σ1 and σ2 is merged, then let δ be the count of the merged wordpiece. 
+For this code, if wordpieces σ1 and σ2 is merged, then let δ be the count of the merged wordpiece. 
 It updates all the variables as follows:
 
 <img src="https://i.imgur.com/6LywEBh.jpg" width="850">
 
-So we should merge the two wordpieces that lead to the greatest decrease in compressed size, 
+The code merges the two wordpieces that lead to the greatest decrease in compressed size, 
 that is the two wordpieces that maximize:
 
 <img src="https://i.imgur.com/q1dLh5J.jpg" width="600">
@@ -33,7 +37,7 @@ Also, the above formula suggests that it should stop when the maximum of the abo
 
 
 ---
-<a name="footnote1">1</a>: Original BPE mode from [subword_nmt](https://github.com/rsennrich/subword-nmt)
+<a name="footnote1">1</a>: Standard BPE mode from [subword_nmt](https://github.com/rsennrich/subword-nmt)
 
 
 <a name="footnote2">2</a>: apply_bpe.py adapted from [subword_nmt](https://github.com/rsennrich/subword-nmt)
