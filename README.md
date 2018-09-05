@@ -4,6 +4,7 @@ BPE with sentencepiece
 # Overview
 
 Compress the corpus using a Shannon-optimal code, the compressed size would be
+
 <img src="https://i.imgur.com/NNjAzjF.jpg" width="300">
 
 If we merge wordpieces σ1 and σ2, then let δ be the count of the merged wordpiece. 
