@@ -1,14 +1,14 @@
-# Sentencepiece
-BPE with sentencepiece
+# Byte Pair Encoding with Pointwise Mutual Information(PMI)
+Notre Dame Natural Language Processing Group
 
 # Overview
 
-Compress the corpus using a Shannon-optimal code, the compressed size would be
+If a corpus is compressed using a Shannon-optimal code, the compressed size would be
 
 <img src="https://i.imgur.com/NNjAzjF.jpg" width="300">
 
-If we merge wordpieces σ1 and σ2, then let δ be the count of the merged wordpiece. 
-We would update all the variables as follows:
+For experiement, if wordpieces σ1 and σ2 is merged, then let δ be the count of the merged wordpiece. 
+It updates all the variables as follows:
 
 <img src="https://i.imgur.com/6LywEBh.jpg" width="850">
 
@@ -17,7 +17,7 @@ that is the two wordpieces that maximize:
 
 <img src="https://i.imgur.com/q1dLh5J.jpg" width="600">
 
-Standard BPE chooses the two wordpieces that maximize c(σ1σ2). But the above formula multiplies this by a correction factor known as the pointwise mutual information of σ1 and σ2, which measures “how much σ1 and σ2 have to do with each other.” It will favor wordpiece pairs with high PMI, and would be expected a word and punctuation to have low PMI.
+Standard BPE chooses the two wordpieces that maximize c(σ1σ2). But the above formula multiplies this by a correction factor known as the **pointwise mutual information** of σ1 and σ2, which measures “how much σ1 and σ2 have to do with each other.” It will favor wordpiece pairs with high PMI, and would be expected a word and punctuation to have low PMI.
 Also, the above formula suggests that it should stop when the maximum of the above formula becomes negative.
 
 # Usage
