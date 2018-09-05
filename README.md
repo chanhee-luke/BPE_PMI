@@ -21,7 +21,7 @@ Standard BPE chooses the two wordpieces that maximize c(σ1σ2). But the above f
 Also, the above formula suggests that it should stop when the maximum of the above formula becomes negative.
 
 # Usage
-```bpe_modified.py -s <number of operations> -orig<original BPE_1 mode> < text > codes_file```<sup>[1](#footnote1)</sup>
+```bpe_modified.py -s <number of operations> -orig(original BPE mode) < text > codes_file```<sup>[1](#footnote1)</sup>
 
 ```apply_bpe.py -c codes_file < text > out_file```<sup>[2](#footnote2)</sup>
 
