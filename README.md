@@ -1,5 +1,5 @@
 # Byte Pair Encoding with Pointwise Mutual Information(PMI)
-Luke Song (Notre Dame Natural Language Processing Group)
+Luke Song (Notre Dame NLP Group)
 
 # Overview
 
